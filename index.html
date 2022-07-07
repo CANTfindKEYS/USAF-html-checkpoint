@@ -6,19 +6,33 @@
             <title>GMDB</title>
         </head>
         <body>
-            <div class="header">
-                <h1>GMDB</h1>
-                <a>Home</a>   
-                <a>Login</a>             
-                <div class="search_icon">
+            <nav>
+                <div class="header">
+                    <h1>GMDB</h1>
+                    <a>Home</a>   
+                    <a>Login</a>             
+                    <div class="search_icon">
+                        <form>
+                            <input type="text" spellcheck="false" class="search_box" autocomplete="off" 
+                            autofocus="true" maxlength="256" name="query" aria-label="Search" placeholder="Search..." required="">    
+                            <input type="submit" class="search" value="Search">             
+                        </form>
+                    </div>
+                </div>
+            </nav>          
+            <div class="login-window">
+                <div class="login-box">
                     <form>
-                        <input type="text" spellcheck="false" class="search_box" autocomplete="off" 
-                        autofocus="true" maxlength="256" name="query" aria-label="Search" placeholder="Search..." required="">    
-                        <input type="submit" class="search" value="Search">             
+                        <input type="text" spellcheck="false" class="login-input" autocomplete="off" 
+                        autofocus="true" maxlength="256" name="query" aria-label="username" placeholder="Username" required="">                                       
                     </form>
+                    <form>
+                        <input type="text" spellcheck="false" class="login-input" autocomplete="off" 
+                        autofocus="true" maxlength="256" name="query" aria-label="password" placeholder="Password" required="">
+                    </form>
+                    <input type="submit" class="submit" value="Submit">   
                 </div>
-                </div>
-                
+            </div>
             </header>
         </body>
     </html>
